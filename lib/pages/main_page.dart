@@ -8,7 +8,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   String title;
-  var _family = ["Eric Hao","Hao Yuhan","Gao Liming"];
+  var _family = ["Eric Hao","Hao Yuhan","Gao Liming","Gao Haifeng", "Li Shuping"];
   @override
   void initState() {
     super.initState();
@@ -18,7 +18,7 @@ class _MainPageState extends State<MainPage> {
     return ListTile(
       title: Text(
         '${_family[i]}',
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.right,
         style: TextStyle(
           color: Colors.blue,
         )
