@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'strings.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,17 +8,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: Strings.title,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter App"),
+          title: Text(Strings.title),
         ),
         body: Center(
           child: Text(
-            "Hello Flutter",
+            Strings.welcome_message,
               style: TextStyle(
               fontSize: 20,
               color: Colors.red,
