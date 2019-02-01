@@ -1,4 +1,4 @@
 class Strings {
   static final title = "Flutter demo";
-  static final welcome_message = "Flutter quick start app";
+  static final welcomeMessage = "Flutter quick start app";
 }

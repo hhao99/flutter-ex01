@@ -7,15 +7,38 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  String title;
+  var _family = ["Eric Hao","Hao Yuhan","Gao Liming"];
+  @override
+  void initState() {
+    super.initState();
+    this.title = Strings.title;
+  }
+  Widget _buildRow(int i) {
+    return ListTile(
+      title: Text(
+        '${_family[i]}',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.blue,
+        )
+      ),
+      
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(Strings.title)
+        title: Text(this.title),
+        
       ),
-      body: Text(
-        Strings.welcome_message,
-      ),
+      body: ListView.builder(
+        itemCount: _family.length,
+        itemBuilder: (BuildContext context, int pos) {
+          return _buildRow(pos);
+        }
+      )
     );
   }
 }
