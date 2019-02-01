@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'strings.dart';
-import 'pages/main_page.dart';
+// import 'pages/main_page.dart';
+import 'pages/layout_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: MainPage(),
+      home: LayoutPage(),
     );
   }
 }
