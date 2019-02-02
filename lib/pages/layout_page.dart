@@ -20,9 +20,19 @@ class _LayoutPageState extends State<LayoutPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            Icon(Icons.star, size: 30),
-            Icon(Icons.star, size: 30),
-            Icon(Icons.star, size: 30),]
+              RaisedButton(
+                child: Text('short'),
+                onPressed: ()=> print(''),
+              ),
+              RaisedButton(
+                child: Text('medium'),
+                onPressed: ()=> print('pressed'),
+              ),
+              RaisedButton(
+                child: Text('long'),
+                onPressed: ()=> print('pressed')
+              ),
+            ]
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
